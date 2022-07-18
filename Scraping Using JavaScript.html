@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Scraping in JavaScript</title>
+</head>
+<body>
+<h1>Scraping in JavaScript</h1>
+	<!-- Scramp Movie Name -->
+	<!-- Website Link: https://www.imdb.com/list/ls068311314/ -->
+<script>
+	document.getElementsByClassName("lister-item-header")
+
+	// Collection Show
+HTMLCollection(37) [h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header, h3.lister-item-header]
+0: h3.lister-item-header
+1: h3.lister-item-header
+2: h3.lister-item-header
+3: h3.lister-item-header
+4: h3.lister-item-header
+5: h3.lister-item-header
+6: h3.lister-item-header
+7: h3.lister-item-header
+8: h3.lister-item-header
+9: h3.lister-item-header
+10: h3.lister-item-header
+11: h3.lister-item-header
+12: h3.lister-item-header
+13: h3.lister-item-header
+14: h3.lister-item-header
+15: h3.lister-item-header
+16: h3.lister-item-header
+17: h3.lister-item-header
+18: h3.lister-item-header
+19: h3.lister-item-header
+20: h3.lister-item-header
+21: h3.lister-item-header
+22: h3.lister-item-header
+23: h3.lister-item-header
+24: h3.lister-item-header
+25: h3.lister-item-header
+26: h3.lister-item-header
+27: h3.lister-item-header
+28: h3.lister-item-header
+29: h3.lister-item-header
+30: h3.lister-item-header
+31: h3.lister-item-header
+32: h3.lister-item-header
+33: h3.lister-item-header
+34: h3.lister-item-header
+35: h3.lister-item-header
+36: h3.lister-item-header
+length: 37
+
+// For Loop
+var names = document.getElementsByClassName("lister-item-header");
+for (i=0; i<names.length; i++)
+    {console.log (names[i].innerText)}
+
+    // Result
+    1. Wonder Woman (2017)
+VM1232:3 2. The Mummy (2017)
+VM1232:3 3. Transformers: The Last Knight (2017)
+VM1232:3 4. The Boss Baby (2017)
+VM1232:3 5. Snatched (2017)
+VM1232:3 6. The Exception (2016)
+VM1232:3 7. The Jerk (1979)
+VM1232:3 8. Alien Arrival (2016)
+VM1232:3 9. National Theatre Live: Obsession (2017)
+VM1232:3 10. The House (I) (2017)
+VM1232:3 11. Baby Driver (2017)
+VM1232:3 12. Amityville: The Awakening (2017)
+VM1232:3 13. 13 Minutes (2015)
+VM1232:3 14. Guardians of the Galaxy Vol. 2 (2017)
+VM1232:3 15. The Mummy (2017)
+VM1232:3 16. Captain Underpants: The First Epic Movie (2017)
+VM1232:3 17. Everything, Everything (2017)
+VM1232:3 18. Snatched (2017)
+VM1232:3 19. The Exception (2016)
+VM1232:3 20. The Jerk (1979)
+VM1232:3 21. National Theatre Live: Obsession (2017)
+VM1232:3 22. Despicable Me 3 (2017)
+VM1232:3 23. The House (I) (2017)
+VM1232:3 24. Baby Driver (2017)
+VM1232:3 25. Guardians of the Galaxy Vol. 2 (2017)
+VM1232:3 26. Pirates of the Caribbean: Dead Men Tell No Tales (2017)
+VM1232:3 27. Logan (2017)
+VM1232:3 28. Captain America: Civil War (2016)
+VM1232:3 29. Doctor Strange (2016)
+VM1232:3 30. Deadpool (2016)
+VM1232:3 31. King Arthur: Legend of the Sword (2017)
+VM1232:3 32. Batman v Superman: Dawn of Justice (2016)
+VM1232:3 33. Split (IX) (2016)
+VM1232:3 34. Get Out (I) (2017)
+VM1232:3 35. John Wick: Chapter 2 (2017)
+VM1232:3 36. Life (I) (2017)
+VM1232:3 37. A Cure for Wellness (2016)
+</script>
+</body>
+</html>
